@@ -1,5 +1,5 @@
 {% set name = "wagtail-nav-menus" %}
-{% set version = "3.11.0" %}
+{% set version = "3.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e590052eefa9b38ed66659d005e78828a2244980f34e72f7ca664c739b348e30
+  sha256: e68dfef523d9ac7a42a6e3d2910e722ffd659582ba93f755f94bc29a53e450ba
 
 build:
   noarch: python
