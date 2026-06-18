@@ -1,5 +1,5 @@
 {% set name = "wagtail-nav-menus" %}
-{% set version = "3.13.2" %}
+{% set version = "3.14.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wagtail_nav_menus-{{ version }}.tar.gz
-  sha256: 8434caaae3f9b31c45daded4d23ced1aa4609f7860eaa059d08beecdf3369422
+  sha256: bd6754b3f46852beae3f4680b37dc4ae9f545beeeeaa594a0756d31a548af9b2
 
 build:
   noarch: python
@@ -19,11 +19,11 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry-core >=1.9.1
+    - hatchling
   run:
     - python >={{ python_min }},<4.0
-    - wagtail >=6.3
-    - wagtail-modeladmin >=2.1.0,<3.0.0
+    - wagtail >=7.0
+    - wagtail-modeladmin >=2.3.0,<3
 
 test:
   imports:
