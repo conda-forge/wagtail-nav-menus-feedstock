@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry-core >=1.9.1
+    - hatchling
   run:
     - python >={{ python_min }},<4.0
     - wagtail >=7.0
